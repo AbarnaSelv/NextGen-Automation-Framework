@@ -1,0 +1,33 @@
+version: "3.8"
+
+services:
+
+  postgres-db:
+    image: postgres:15
+    container_name: postgres-db
+    environment:
+      POSTGRES_DB: healenium
+      POSTGRES_USER: healenium_user
+      POSTGRES_PASSWORD: healenium_password
+    ports:
+      - "5432:5432"
+
+  hlm-backend:
+    image: healenium/hlm-backend:3.5.3
+    container_name: hlm-backend
+    ports:
+      - "7878:7878"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres-db:5432/healenium
+      SPRING_DATASOURCE_USERNAME: healenium_user
+      SPRING_DATASOURCE_PASSWORD: healenium_password
+    depends_on:
+      - postgres-db
+
+  selector-imitator:
+    image: healenium/hlm-selector-imitator:1.4
+    container_name: selector-imitator
+    ports:
+      - "8000:8000"
+    depends_on:
+      - hlm-backend
