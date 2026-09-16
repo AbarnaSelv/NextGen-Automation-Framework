@@ -1,0 +1,1 @@
+{"uuid":"932c5f33-0680-4e90-aebc-9f0fe89c409d","name":"Automation Suite","children":["2bb902b3-1bf0-4e80-838a-1c1db3928761"],"befores":[{"name":"copyEnvironment","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1786889763630,"stop":1786889763649}],"afters":[],"start":1786889763578,"stop":1786889903336}

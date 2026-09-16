@@ -2,6 +2,7 @@ package com.abarna.tests;
 
 import io.qameta.allure.*;
 
+
 import org.testng.Assert;
 
 import org.testng.annotations.Test;
@@ -24,7 +25,7 @@ public class PlaceOrderTest extends BaseTest {
 
 	@Severity(SeverityLevel.CRITICAL)
 	@Description("Verify that a logged-in user can place an order successfully.")
-	@Test
+	@Test()
 	public void verifyUserCanPlaceOrderSuccessfully() {
 
 		LoginPage loginPage = new LoginPage(driver);

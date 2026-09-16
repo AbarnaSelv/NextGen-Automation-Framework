@@ -1,0 +1,1 @@
+{"uuid":"997aea16-f0cb-4aab-a3a0-de16e04770e4","name":"com.abarna.base.BaseTest.setup","children":["19709497-aff2-465e-a424-38076491854e"],"description":"","befores":[{"name":"setup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1789562679988,"stop":1789562701173}],"afters":[],"start":1789562679988,"stop":1789562701173}

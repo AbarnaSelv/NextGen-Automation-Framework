@@ -22,9 +22,9 @@ public class DriverFactory {
 
 	private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 
-	public static WebDriver initializeDriver() {
+	public static WebDriver initializeDriver(String browser) {
 
-		String browser = ConfigReader.getBrowser();
+		
 		String execution = ConfigReader.getExecution();
 
 		switch (browser.toLowerCase()) {
@@ -34,7 +34,7 @@ public class DriverFactory {
 			ChromeOptions options = new ChromeOptions();
 
 			options.addArguments("--disable-blink-features=AutomationControlled");
-			options.addArguments("--window-size=1920,1080");
+			options.addArguments("--window-size=960,1080");
 			options.addArguments("--disable-infobars");
 			options.addArguments("--disable-extensions");
 			options.addArguments("--disable-save-password-bubble");

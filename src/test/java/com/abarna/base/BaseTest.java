@@ -8,6 +8,7 @@ import java.nio.file.StandardCopyOption;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Parameters;
 
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
@@ -29,11 +30,11 @@ public class BaseTest {
 	}
 
 	@BeforeMethod
-	public void setup() {
-
-		driver = DriverFactory.initializeDriver();
+	@Parameters("browser")
+	public void setup(String browser) {
+	    driver = DriverFactory.initializeDriver(browser);
 	}
-
+	
 	@AfterMethod(alwaysRun = true)
 	public void tearDown(ITestResult result) {
 
