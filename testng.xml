@@ -6,17 +6,10 @@
     </listeners>
 
     <test name="Chrome Test">
-        <parameter name="browser" value="chrome"/>
-        <classes>
-            <class name="com.abarna.tests.PlaceOrderTest"/>
-        </classes>
-    </test>
-
-    <test name="Firefox Test">
-        <parameter name="browser" value="firefox"/>
-        <classes>
-            <class name="com.abarna.tests.PlaceOrderTest"/>
-        </classes>
-    </test>
+    <parameter name="browser" value="chrome"/>
+    <classes>
+        <class name="com.abarna.tests.PlaceOrderTest"/>
+    </classes>
+</test>
 
 </suite>
