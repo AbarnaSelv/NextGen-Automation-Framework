@@ -35,7 +35,7 @@ public class ProductsPage extends BasePage {
 	// ===========================
 
 	public String getProductsHeading() {
-		return actions.getText(allProductsHeading);
+	    return actions.getText(allProductsHeading, "ALL PRODUCTS");
 	}
 
 	// ===========================

@@ -60,6 +60,11 @@ public class ElementActions {
 
 		return element.getText();
 	}
+	
+	public String getText(WebElement element, String expectedText) {
+	    wait.until(ExpectedConditions.textToBePresentInElement(element, expectedText));
+	    return element.getText();
+	}
 
 	public WebElement findElement(By locator) {
 
