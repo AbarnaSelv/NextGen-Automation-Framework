@@ -6,7 +6,7 @@
     </listeners>
 
     <test name="Chrome Test">
-    <parameter name="browser" value="chrome"/>
+    <parameter name="browser" value="firefox"/>
     <classes>
         <class name="com.abarna.tests.PlaceOrderTest"/>
     </classes>
