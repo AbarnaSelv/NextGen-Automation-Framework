@@ -67,7 +67,7 @@ public class DriverFactory {
 
 			} else {
 
-				WebDriverManager.chromedriver().setup();
+				WebDriverManager.chromedriver().clearDriverCache().clearResolutionCache().setup();
 
 				chromeDriver = new ChromeDriver(options);
 
