@@ -170,6 +170,7 @@ Jenkins automatically checks out the latest code from GitHub and executes:
 
 ```bash
 mvn clean test
+```
 
 ---
 
