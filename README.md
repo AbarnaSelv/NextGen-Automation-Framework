@@ -162,6 +162,17 @@ Login Successful
 
 ---
 
+## Jenkins CI Execution
+
+The automation framework is integrated with Jenkins for Continuous Integration.
+
+Jenkins automatically checks out the latest code from GitHub and executes:
+
+```bash
+mvn clean test
+
+---
+
 # Running the Project
 
 ### Clone Repository
